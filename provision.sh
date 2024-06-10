@@ -7,6 +7,7 @@ dnf install -y git
 dnf install -y vim
 dnf install -y wget
 dnf install -y fastfetch
+sudo dnf install -y rpmdevtools rpmlint
 dnf group install -y "MATE Desktop"
 dnf group install -y "MATE Applications"
 localectl set-keymap de
