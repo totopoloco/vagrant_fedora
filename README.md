@@ -30,7 +30,7 @@ A basic example is already included in the `rpmbuild` directory.
 To build the example RPM, follow these steps:
 1. Run `rpmbuild -ba rpmbuild/SPECS/hello.spec`
 2. The RPM will be built and placed in the `RPMS` directory
-3. You can install the RPM with `sudo rpm -ivh rpmbuild/RPMS/x86_64/hello-1.0-1.fc33.x86_64.rpm`
+3. You can install the RPM with `sudo rpm -ivh rpmbuild/RPMS/x86_64/hello-0.0.1-1.fc39.x86_64.rpm`
 
 ## Testing and cleaning up of RPM
 1. The Hello World RPM can be tested by running `hello.sh` in the terminal
