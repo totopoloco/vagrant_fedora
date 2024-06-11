@@ -8,7 +8,12 @@ Vagrant file for RPM development
 3. Run `vagrant up --provision` to start the VM and install the necessary packages (this will take a while)
 4. Run `vagrant ssh` to connect to the VM
 5. Modify the file .rpmmacros in the home directory, the new content should be as follows:
+From:
+```shell
+%_topdir %(echo "$PWD")/rpmbuild
 ```
+
+```shell
 ...
 %_topdir %(echo "$PWD")/rpmbuild
 ...
@@ -37,7 +42,7 @@ To build the example RPM, follow these steps:
 
 ## Notes
 - The hello.sh script was packed with the following command:
-```
+```shell
 vagrant@localhost:/vagrant/project$ tar --create --file hello-0.0.1.tar.gz hello-0.0.1
 vagrant@localhost:/vagrant/project$ mv hello-0.0.1.tar.gz rpmbuild/SOURCES/
 ```
