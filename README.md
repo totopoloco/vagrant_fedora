@@ -1,6 +1,11 @@
 # vagrant_fedora
-Vagrant file for RPM development
+A Vagrant setup for building RPM packages on Fedora
 
+## Introduction
+This project is a Vagrant setup for building RPM packages on Fedora. 
+It includes a basic example of an RPM package that installs a simple Hello World script.
+The project is based on the Fedora 39 cloud base box.
+Feel free to use this project as a starting point for building your own RPM packages.
 
 ## Usage
 1. Install Vagrant and VirtualBox on your host machine (https://www.vagrantup.com/docs/installation/ and https://www.virtualbox.org/wiki/Downloads)
