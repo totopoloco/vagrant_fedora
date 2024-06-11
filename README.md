@@ -39,7 +39,7 @@ To build the example RPM, follow these steps:
 - The hello.sh script was packed with the following command:
 ```
 vagrant@localhost:/vagrant/project$ tar --create --file hello-0.0.1.tar.gz hello-0.0.1
-mv hello-0.0.1.tar.gz rpmbuild/SOURCES/
+vagrant@localhost:/vagrant/project$ mv hello-0.0.1.tar.gz rpmbuild/SOURCES/
 ```
 
 ## References
