@@ -3,11 +3,14 @@
 # Check if the script was run with an argument
 if [ $# -eq 1 ]; then
     SUDO="sudo"
+    IS_SUDO="yes"
 else
     SUDO=""
+    IS_SUDO="no"
 fi
 
 echo "Provisioning virtual machine..."
+echo "Are we needing to use sudo? $IS_SUDO"
 
 #Start by updating the package list
 #and installing some basic packages
