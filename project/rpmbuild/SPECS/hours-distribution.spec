@@ -23,20 +23,20 @@ After=syslog.target
 
 [Service]
 User=root
-ExecStart=/usr/bin/java -jar /usr/bin/hours-distribution.jar
+ExecStart=/usr/bin/java -jar /usr/bin/%{name}.jar
 SuccessExitStatus=143
 
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/%{name}.service
 
 systemctl daemon-reload
-systemctl enable hours-distribution.service
-systemctl start hours-distribution.service
+systemctl enable %{name}.service
+systemctl start %{name}.service
 
 %preun
-systemctl stop hours-distribution.service
-systemctl disable hours-distribution.service
-rm /etc/systemd/system/hours-distribution.service
+systemctl stop %{name}.service
+systemctl disable %{name}.service
+rm /etc/systemd/system/%{name}.service
 systemctl daemon-reload
 
 %files
