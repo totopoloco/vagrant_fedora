@@ -24,11 +24,11 @@ A basic example is already included in the `rpmbuild` directory.
 To build the example RPM, follow these steps:
 1. Run `rpmbuild -ba rpmbuild/SPECS/hours-distribution.spec`
 2. The RPM will be built and placed in the `RPMS` directory
-3. You can install the RPM with `sudo rpm -ivh rpmbuild/RPMS/x86_64/hours-distribution-0.0.1-1.fc40.x86_64.rpm`
+3. You can install the RPM with `sudo rpm -ivh rpmbuild/RPMS/noarch/hours-distribution-0.0.1-1.fc40.noarch.rpm`
 4. If the following error occurs:
 ```shell
 error: Failed dependencies:
-	java-21-openjdk is needed by hours-distribution-0.0.1-1.fc40.x86_64
+	java-21-openjdk is needed by hours-distribution-0.0.1-1.fc40.noarch
 ```
 5. Install the required package with `sudo dnf install -y java-21-openjdk`
 6. Try again (see step 3)
