@@ -7,6 +7,7 @@ License:        MIT
 Source0:        %{name}.jar
 
 Requires:       bash, java-21-openjdk
+BuildArch:      noarch
 
 %description
 A Spring Boot application that exposes a REST API to distribute hours among employees.
