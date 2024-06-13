@@ -13,16 +13,10 @@ Feel free to use this project as a starting point for building your own RPM pack
 3. Run `vagrant up --provision` to start the VM and install the necessary packages (this will take a while)
 4. Run `vagrant ssh` to connect to the VM
 5. Modify the file .rpmmacros in the home directory, the new content should be as follows:
-From:
 ```shell
 %_topdir %(echo "$PWD")/rpmbuild
 ```
 
-```shell
-...
-%_topdir %(echo "$PWD")/rpmbuild
-...
-```
 6. Move to the directory `/vagrant/project` to build the RPM
 
 ## RPM Build
