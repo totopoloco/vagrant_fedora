@@ -41,7 +41,7 @@ error: Failed dependencies:
   
 
 ## Testing and cleaning up of RPM
-1. The Hello World RPM can be tested by checking the state of the service by running `systemctl status hours-distribution`
+1. Check the state of the service by running `systemctl status hours-distribution`
 2. The following output should be displayed:
 ```shell
 hours-distribution.service - Hours Distribution Service
