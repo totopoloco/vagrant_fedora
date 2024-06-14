@@ -64,7 +64,7 @@ hours-distribution.service - Hours Distribution Service
 5. You can now delete the cloned repository from your host machine with `rm -rf vagrant_fedora`
 
 ## Notes
-- The jar file was copied from my another project in Github [hours](https://github.com/totopoloco/hours)
+The jar file was copied from my other project on Github: [hours](https://github.com/totopoloco/hours)
 
 ## References
 - https://www.vagrantup.com/docs/installation/
