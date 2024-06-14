@@ -14,6 +14,7 @@ echo "Are we needing to use sudo? $IS_SUDO"
 
 #Start by updating the package list
 #and installing some basic packages
+$SUDO dnf config-manager --set-enabled '*'
 $SUDO dnf update -y
 $SUDO dnf install -y git
 $SUDO dnf install -y vim
@@ -32,10 +33,11 @@ $SUDO dnf group install -y "MATE Applications"
 $SUDO localectl set-keymap de
 $SUDO localectl set-x11-keymap de
 #Uncomment the following line to enable the graphical login
-#systemctl set-default graphical.target
+systemctl set-default graphical.target
 
 #Display some system information after the end of the installation
 fastfetch
 
 #A message to the user to reboot the virtual machine
+#sudo dnf config-manager --set-disabled '*'
 echo "Please reboot the virtual machine to complete the installation."
